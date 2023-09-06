@@ -146,7 +146,6 @@ public class OrderServiceImplTest {
         assertNotNull(result);
         assertEquals(orderId, result.getOrderId());
         assertEquals("new", result.getOrderStatus());
-        // Add more assertions as needed
     }
 
 
