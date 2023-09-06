@@ -1,0 +1,92 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.interview.spring</groupId>
+	<artifactId>RestApi</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>RestApi</name>
+
+	<properties>
+		<!-- Other properties... -->
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+		<java.version>11</java.version>
+	</properties>
+
+	<dependencies>
+
+		<!-- JavaB Api -->
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.4.0-b180830.0359</version>
+		</dependency>
+
+		<!-- JavaX -->
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>8.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+
+		<!-- Spring Web -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<version>2.5.4</version>
+		</dependency>
+
+		<!-- MySQL Driver -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.27</version>
+		</dependency>
+
+		<!-- Spring Data JPA -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<version>2.5.4</version>
+		</dependency>
+
+
+		<!-- Spring Boot Starter Test for JUnit 5 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-test</artifactId>
+	        <version>2.5.4</version> 
+	        <scope>test</scope>
+		</dependency>
+
+		<!-- JUnit 5 for writing JUnit tests -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.8.1</version> 
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Mockito for mocking dependencies -->
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>3.12.4</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
